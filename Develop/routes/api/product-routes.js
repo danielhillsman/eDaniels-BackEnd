@@ -26,7 +26,7 @@ router.get('/:id', (req, res) => {
     const productData = await Product.findByPk(req.params.id, {
       include: [{ model: Category }, { model: Tag, through: ProductTag, as: "products" }],
     });
-
+    // Send error message if ID doesn't match
     if (!productData) {
       res.status(404).json({ message: 'No Product by that id...' });
       return;
@@ -71,7 +71,7 @@ router.post('/', (req, res) => {
     });
 });
 
-// update product
+// Update route for product
 router.put('/:id', (req, res) => {
   // update product data
   Product.update(req.body, {
@@ -112,9 +112,25 @@ router.put('/:id', (req, res) => {
       res.status(400).json(err);
     });
 });
-
+// Delete route for product
 router.delete('/:id', (req, res) => {
   // delete one product by its `id` value
-});
+  try {
+    const productData = await Product.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    // Send error message if ID doesn't match
+    if (!productData) {
+      res.status(404).json({ message: 'No Product by this ID...' });
+      return;
+    }
 
+    res.status(200).json(productData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+// Exporting this file
 module.exports = router;
