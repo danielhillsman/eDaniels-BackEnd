@@ -43,7 +43,7 @@ router.post('/', (req, res) => {
   try {
     const tagData = await Tag.create(req.body);
     res.status(200).json(tagData);
-    
+
   } catch (err) {
     res.status(400).json(err);
   }
@@ -55,6 +55,21 @@ router.put('/:id', (req, res) => {
 // DELETE route by ID
 router.delete('/:id', (req, res) => {
   // delete on tag by its `id` value
-});
+  try {
+    const tagData = await Tag.destroy({
+      where: { id: req.params.id }
+    });
+    // Send error message if ID doesn't match
+    if (!tagData) {
+      res.status(404).json({ message: 'No Tag with that ID...' });
+      return;
+    }
+    res.status(200).json(tagData);
 
+  } catch (err) {
+    res.status(500).json(err);
+  }
+
+});
+// Exports this file
 module.exports = router;
