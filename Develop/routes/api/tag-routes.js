@@ -21,7 +21,21 @@ router.get('/', (req, res) => {
 // GET route for tags by ID
 router.get('/:id', (req, res) => {
   // find a single tag by its `id`
-  // be sure to include its associated Product data
+  try {
+    const tagData = await Tag.findByPk(req.params.id, {
+      include: [{ model: Product, through: ProductTag, as: "products_tag" }],
+    });
+    // Send error message if ID doesn't match
+    if (!tagData) {
+      res.status(404).json({ message: 'No Tag found by that ID...' });
+      return;
+    }
+
+    res.status(200).json(tagData);
+
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 // POST route to add a new tag
 router.post('/', (req, res) => {
