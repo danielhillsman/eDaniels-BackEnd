@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
   }
 });
 // GET route to find by ID
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
  // find one category by its `id` value
   try {
     const categoryData = await Category.findByPk(req.params.id, {
@@ -37,7 +37,7 @@ router.get('/:id', (req, res) => {
   }
 });
 // POST route to add
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   // create a new category
   try {
     const categoryData = await Category.create(req.body);
@@ -65,7 +65,7 @@ router.put('/:id', (req, res) => {
     });
 });
 // DELETE route to delete by its ID
-router.delete('/:id', (req, res) => { 
+router.delete('/:id', async (req, res) => { 
   // delete a category by its `id` value
   try {
     const categoryData = await Category.destroy({
