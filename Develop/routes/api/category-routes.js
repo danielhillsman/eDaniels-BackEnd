@@ -50,6 +50,19 @@ router.post('/', (req, res) => {
 // PUT route to update by its ID
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
+  Category.update(req.body, {
+    where: {
+      id: req.params.id,
+    },
+  })
+    .then((productTag) => {
+      res.status(200).json(productTag);
+
+    })
+    .catch((err) => {
+      // console.log(err);
+      res.status(400).json(err);
+    });
 });
 // DELETE route to delete by its ID
 router.delete('/:id', (req, res) => { 
