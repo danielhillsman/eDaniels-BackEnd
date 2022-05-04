@@ -1,11 +1,21 @@
+// Importing files
 const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
 
-router.get('/', (req, res) => {
-  // find all categories
-  // be sure to include its associated Products
+// find all categories
+router.get('/', async (req, res) => {
+  try {
+    const categoryData = await Category.findAll({
+      include: [{ model: Product }],
+    });
+    res.status(200).json(categoryData);
+
+  } catch (error) {
+
+    res.status(500).json(error);
+  }
 });
 
 router.get('/:id', (req, res) => {
