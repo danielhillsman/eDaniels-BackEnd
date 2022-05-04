@@ -25,8 +25,8 @@ router.get('/:id', (req, res) => {
       include: [{ model: Product }],
     });
     if (!categoryData) {
-
-      res.status(404).json({ message: 'No Category by that id...' });
+     // Send error message if ID doesn't match
+      res.status(404).json({ message: 'No Category by that ID...' });
       // Returns function
       return;
     }
