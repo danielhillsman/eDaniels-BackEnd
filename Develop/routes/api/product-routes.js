@@ -132,5 +132,5 @@ router.delete('/:id', (req, res) => {
     res.status(500).json(err);
   }
 });
-// Exporting this file
+// Exports this file
 module.exports = router;
