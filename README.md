@@ -5,12 +5,13 @@
   ![license](https://img.shields.io/static/v1?label=license&message=LABD&color=success)
   
   ## Description
-  A complete back end application where I create routes to add, view, update, and delete data.
+  A complete back end application where I create routes to add, view, add, update, and delete data.
   
   ## Table of Contents
  
   * [Links](#links)
   * [Installation](#installation)
+  * [Usage](#usage)
   * [Technology-Used](#technology-used)
   * [Questions](#questions)
   * [Screenshots](#screenshots)
@@ -71,7 +72,7 @@
   9) For questions on how to view, add, update, and/or delete data. Watch this video for help https://drive.google.com/file/d/1mY8u3fcJ8m7V4PFIn3Lt_cFtdNSXYCiz/view
   ## Usage
   ````
-  Insomnia or Postman AND MySql Workbench
+  Insomnia AND MySql Workbench
   `````
   ## Technology-Used
   
