@@ -5,7 +5,7 @@
   ![license](https://img.shields.io/static/v1?label=license&message=LABD&color=success)
   
   ## Description
-  A complete back end appliction where I create routes to add, view, update, and delete data.
+  A complete back end application where I create routes to add, view, update, and delete data.
   
   ## Table of Contents
  
