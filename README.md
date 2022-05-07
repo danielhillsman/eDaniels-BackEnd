@@ -27,14 +27,17 @@
   git clone https://github.com/danielhillsman/eDaniels-BackEnd.git
   ````
   2) cd into Repo and then cd into develop folder.
-  <br />
-  <br />
   4) 3) Run:
   ````
   npm i
   ````
-  4) copy and paste db content into a "MySQL Workbench" query and commit "Execute"
-  5) Run:
+  4) Copy and paste db content into a "MySQL Workbench" query and commit "Execute"
+  ````
+  DROP DATABASE IF EXISTS ecommerce_db;
+  CREATE DATABASE ecommerce_db;
+
+  ````
+  6) Run:
   ````
   npm run seed
   ````
