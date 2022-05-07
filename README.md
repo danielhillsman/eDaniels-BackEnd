@@ -34,11 +34,11 @@
   ````
   cd develop
   ````
-  5) Run:
+  4) Run:
   ````
   npm i
   ````
-  4) Copy and paste:
+  5) Copy and paste:
   ````
   DROP DATABASE IF EXISTS ecommerce_db;
   CREATE DATABASE ecommerce_db;
@@ -54,14 +54,17 @@
   in develop folder.
   <br />
   <br />
-  6) Then run:
+  7) Then run:
   ````
   npm start
   ````
-  7) The server is now running, and you can view all routes in the two options below on the Usage Tab.
+  in develop folder.
+  <br />
+  <br />
+  8) The server is now running, and you can view all routes in either "Insomnia" or "Postman".
   ## Usage
   ````
-  Insomnia or Postman
+  Insomnia or Postman AND MySql Workbench
   `````
   ## Technology-Used
   
