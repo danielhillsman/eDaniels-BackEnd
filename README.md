@@ -18,9 +18,9 @@
 
   ## Links
   * VIDEO Link:
-  * [Screenrecording Video](https://drive.google.com/file/d/1mY8u3fcJ8m7V4PFIn3Lt_cFtdNSXYCiz/view)
+  [Screenrecording Video](https://drive.google.com/file/d/1mY8u3fcJ8m7V4PFIn3Lt_cFtdNSXYCiz/view)
   * Repo Link
-  * [eDaniels-BackEnd](https://github.com/danielhillsman/eDaniels-BackEnd)
+  [eDaniels-BackEnd](https://github.com/danielhillsman/eDaniels-BackEnd)
   
   ## Installation
   1) Clone repo with:
@@ -72,11 +72,11 @@
   9) For questions on how to view, add, update, and/or delete data. Watch this video for help: [How to use routes in Insomnia](https://drive.google.com/file/d/1mY8u3fcJ8m7V4PFIn3Lt_cFtdNSXYCiz/view)
   ## Usage
 
-  ***Insomnia***, ***Node***, and ***MySql Workbench***
+  ***Insomnia***, ***Node***, and ***MySql Workbench*** 
   
   ## Technology-Used
   
-  ***Javascript***, ***Node.js***, and ***MySQL*** 
+  ***Javascript***, ***Node.js***, ***MySQL***, ***DOTENV***,***EXPRESS***, and***SEQUELIZE***
   
   ## Questions?
 
