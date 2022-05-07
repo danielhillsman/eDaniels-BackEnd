@@ -36,19 +36,21 @@
   ````
   npm run seed
   ````
-  in develop folder <br />
+  in develop folder.
+  <br />
+  <br />
   6) Then run:
   ````
   npm start
   ````
-  7) The server is now running, and you can view all routes in the two options below on the Usage Tab
+  7) The server is now running, and you can view all routes in the two options below on the Usage Tab.
   ## Usage
   ````
   Insomnia or Postman
   `````
   ## Technology-Used
   
-  ***HTML***, ***CSS***, ***Javascript***, and ***jQuery***
+  ***Javascript***, ***Node.js***, and ***MySQL*** 
   
   ## Questions?
 
