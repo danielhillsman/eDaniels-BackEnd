@@ -18,9 +18,9 @@
 
   ## Links
   * VIDEO Link:
-  * https://drive.google.com/file/d/1mY8u3fcJ8m7V4PFIn3Lt_cFtdNSXYCiz/view
+  * [Screenrecording Video](https://drive.google.com/file/d/1mY8u3fcJ8m7V4PFIn3Lt_cFtdNSXYCiz/view)
   * Repo Link
-  * https://github.com/danielhillsman/eDaniels-BackEnd
+  * [eDaniels-BackEnd](https://github.com/danielhillsman/eDaniels-BackEnd)
   
   ## Installation
   1) Clone repo with:
