@@ -22,27 +22,26 @@
   * https://github.com/danielhillsman/Weather-Dashboard
   
   ## Installation
+  1) Clone repo with:
   ````
-  1) Clone repo with "git clone https://github.com/danielhillsman/eDaniels-BackEnd.git" 
+  git clone https://github.com/danielhillsman/eDaniels-BackEnd.git
   ````
+  2) cd into Repo and then cd into develop folder
+  3) run:
   ````
-  2) cd into Repo and then cd into develop folder 
-  ````
-  ````
-  3) run "npm i"
-  ````
+  npm i
   ````
   4) copy and paste db content into a "MySQL Workbench" query and commit "Execute"
+  5) Run:
   ````
+  npm run seed
   ````
-  5) run "npm run seed" in develop folder
+  in develop folder
+  6) Then run:
   ````
-  ````
-  6) then run "npm start"
-  ````
+  npm start
   ````
   7) The server is now running, and you can view all routes in the two options below on the Usage Tab
-  ````
   ## Usage
   ````
   Insomnia or Postman
