@@ -69,7 +69,7 @@
   in either "Insomnia" or "Postman".
   <br />
   <br />
-  9) For questions on how to view, add, update, and/or delete data. Watch this video for help: https://drive.google.com/file/d/1mY8u3fcJ8m7V4PFIn3Lt_cFtdNSXYCiz/view
+  9) For questions on how to view, add, update, and/or delete data. Watch this video for help: [How to use routes in Insomnia](https://drive.google.com/file/d/1mY8u3fcJ8m7V4PFIn3Lt_cFtdNSXYCiz/view)
   ## Usage
 
   ***Insomnia***, ***Node***, and ***MySql Workbench***
