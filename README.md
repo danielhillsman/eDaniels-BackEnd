@@ -31,12 +31,15 @@
   ````
   npm i
   ````
-  4) Copy and paste db content into a "MySQL Workbench" query and commit "Execute"
+  4) Copy and paste:
   ````
   DROP DATABASE IF EXISTS ecommerce_db;
   CREATE DATABASE ecommerce_db;
 
   ````
+  into a "MySQL Workbench" query and commit "Execute".
+  <br />
+  <br />
   6) Run:
   ````
   npm run seed
