@@ -26,8 +26,10 @@
   ````
   git clone https://github.com/danielhillsman/eDaniels-BackEnd.git
   ````
-  2) cd into Repo and then cd into develop folder
-  3) Run:
+  2) cd into Repo and then cd into develop folder.
+  <br />
+  <br />
+  4) 3) Run:
   ````
   npm i
   ````
